@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Source+Sans+3:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --dark-primary-color:#303F9F;
+    --light-primary-color:#C5CAE9;
+    --primary-color:#3F51B5;
+    --accent-color:#448AFF;
+    --text-color:#FFFFFF;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--light-primary-color);
+}
+.parent{
+    background-color:var(--dark-primary-color) ;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 100px 0 var(--accent-color);
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+    margin-top: 5%;
+    color: var(--text-color);
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--text-color);
+}
+.score{
+    top: 30%;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.speak-btn{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2% 3%;
+    font-size: 1rem;
+    font-weight: 600;
+    background:transparent;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    
+    
+}
+.play-again-btn{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1rem;
+    background:transparent;
+    border-style: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    padding: 1% 2%;
+
+}
+.play-again-btn:hover{
+    box-shadow: 0 0 10px 0 var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--dark-primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition:ease-in 0.3s;
+}
+.speak-btn:hover{
+    box-shadow: 0 0 10px 0 var(--dark-primary-color);
+    background-color: var(--accent-color);
+    color: var(--dark-primary-color);
+    cursor: pointer;
+    transition:ease-in 0.3s;
+}
+.final-attempt{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal {
+    display: none;
+    position: absolute; 
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 50px 0 var(--accent-color); 
+    transition:ease-in 0.4s;
+    
+}
+.modal-content {
+    background-color: #B3E5FC;
+}
+.max-attempt-model{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 80%;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+  

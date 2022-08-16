@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak the guess number</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- this is main section  -->
+    <div class="parent">
+        
+            <h3>Speak the guess number between 1 to 100</h3>
+            <p class="score">You have 10 attempt only</p>
+            <p class="final-text"></p>
+            <h3 class="result"></h3>
+            <button class="speak-btn" onclick="speak()">Click to speak</button>
+        
+    </div>
+    <!-- this is the final section -->
+    <div class="modal">
+         <div class="modal-content">
+            <p class="final-output">Congrats your guess is correct</p>
+            <button class="play-again-btn" onclick="playagain()">Play again</button>
+        </div>
+
+    </div>
+
+    <!-- this is max-attempt section -->
+    <div class="max-attempt-model">
+        <p>You played 10 times, attempts are over</p>
+        <button class="play-again-btn" onclick="playagain()">Play again</button>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
+
